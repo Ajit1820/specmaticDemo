@@ -16,9 +16,9 @@ Feature: Employees API
     Then status 200
     Examples:
       | id | name     | department  | designation         |
-       | 70 | Jill Doe | Engineering | Director  |
-      | 80 | Michael  Doe | Medical | Director  |
-      | 90 | Rich Doe | Engineering | Director  |
+       | 10 | Jill Doe | Engineering | Director  |
+      | 20 | Michael  Doe | Medical | Director  |
+      | 50 | Rich Doe | Engineering | Director  |
 
   Scenario Outline: Get Employee Not Found Error
     When GET /znsio/specmatic/employees/100
