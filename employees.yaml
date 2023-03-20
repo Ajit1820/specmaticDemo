@@ -2,9 +2,11 @@ openapi: 3.0.0
 info:
   title: Employees
   version: '1.0'
-servers: []
+servers:
+  - url: http://localhost:8080
+    description: Local
 paths:
-  '/znsio/specmatic/employees':
+  '/employees':
     post:
       summary: ''
       requestBody:
@@ -19,7 +21,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Employee'
-  '/znsio/specmatic/employees/{id}':
+  '/employees/{id}':
     parameters:
       - schema:
           type: number
