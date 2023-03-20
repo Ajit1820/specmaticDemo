@@ -1,7 +1,7 @@
 Feature: Employees API
 
   Background:
-    Given openapi ./employees.yaml
+    Given openapi ./employee.yaml
 
   Scenario Outline: Create Employee
     When POST /employees
