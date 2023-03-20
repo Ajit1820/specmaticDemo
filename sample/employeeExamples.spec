@@ -8,7 +8,7 @@ Feature: Employees API
     Then status 201
     Examples:
       | id | name     | department  | designation |
-      | 70 | Jill Doe | Engineering | Director  |
+      | 70 | 89 | Engineering | Director  |
       | 80 | Michael  Doe | Medical | Director  |
       | 90 | Rich Doe | Engineering | Director  |
   Scenario Outline: Get Employee Success
