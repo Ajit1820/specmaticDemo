@@ -4,7 +4,7 @@ Feature: Employees API
     Given openapi ./employee.yaml
 
   Scenario Outline: Create Employee
-    When POST /employees
+    When POST /znsio/specmatic/employees
     Then status 201
     Examples:
       | id | name     | department  | designation |
@@ -12,7 +12,7 @@ Feature: Employees API
       | 80 | Michael  Doe | Medical | Director  |
       | 90 | Rich Doe | Engineering | Director  |
   Scenario Outline: Get Employee Success
-    When GET /employees/(id:number)
+    When GET /znsio/specmatic/employees/(id:number)
     Then status 200
     Examples:
       | id | name     | department  | designation         |
@@ -21,11 +21,11 @@ Feature: Employees API
       | 90 | Rich Doe | Engineering | Director  |
 
   Scenario Outline: Get Employee Not Found Error
-    When GET /employees/100
+    When GET /znsio/specmatic/employees/100
     Then status 404
 
   Scenario Outline: Update Employee Success
-    When PUT /employees/10
+    When PUT /znsio/specmatic/employees/10
     Then status 200
     Examples:
       | id | REQUEST-BODY                                                                             |
