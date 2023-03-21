@@ -15,10 +15,10 @@ Feature: Employees API
     When GET /employees/(id:number)
     Then status 200
     Examples:
-      | id | name     | department  | designation         |
-       | 70 | Jill Doe | Engineering | Director  |
-      | 80 | Michael  Doe | Medical | Director  |
-      | 90 | Rich Doe | Engineering | Director  |
+      | id | 
+      | 70 |
+      | 80 | 
+      | 90 | 
 
   Scenario Outline: Get Employee Not Found Error
     When GET /employees/100
