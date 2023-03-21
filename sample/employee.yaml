@@ -43,7 +43,17 @@ paths:
             application/json:
               schema:
                 type: object
-                properties: {}
+                properties:
+                  timestamp:
+                    type: string
+                  status:
+                    type: integer
+                  error:
+                    type: string
+                  message:
+                    type: string
+                  path:
+                    type: string
 components:
   schemas:
     Employee:
