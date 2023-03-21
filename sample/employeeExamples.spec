@@ -5,7 +5,7 @@ Feature: Employees API
 
   Scenario Outline: Create Employee
     When POST /employees
-  Then status 200
+  Then status 201
     Examples:
       | id | name     | department  | designation |
       | 70 | Joe Done | Engineering | Director  |
