@@ -73,6 +73,6 @@ components:
         name:
           type: string
         department:
-          type: String
+          type: string
         designation:
           type: string
