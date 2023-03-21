@@ -15,7 +15,7 @@ paths:
               $ref: '#/components/schemas/Employee'
       responses:
         '201':
-          description: Employee Created Response
+          description: Created
           content:
             application/json:
               schema:
