@@ -16,7 +16,7 @@ Feature: Employees API
     Then status 200
     Examples:
       | id | 
-      | 7O |
+      | 70 |
       | 80 | 
       | 90 | 
 
